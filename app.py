@@ -33,6 +33,11 @@ mongo = PyMongo(app) # (app) is the Flask object referenced above
 def index():
     return render_template("index.html")
 
+@app.route("/get_books")
+def get_books():
+    books = mongo.db.books.find()
+    return render_template("books.html", books=books)
+
 
 # Building registration function
 @app.route("/register", methods=["GET", "POST"])
