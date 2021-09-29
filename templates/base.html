@@ -8,12 +8,37 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <!-- Adding custom styles and scripts, <link> and <script> tags must always be the last ones loaded -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
     <title>Football Shelf</title>
 </head>
 <body>
+
+    <header>
+        <!-- Top Navbar -->
+        <!-- Dropdown Structure -->
+        <nav>
+            <div class="nav-wrapper text-shadow amber darken-4">
+                <a href="{{url_for('index')}}" class="brand-logo center">Football Shelf</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-chevron-circle-down"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="#">Book Library</a></li>
+                    <li><a href="#">Add Book</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><h4 class="center-align text-shadow amber-text text-darken-4">Football Shelf</h4></li>
+            <li><a href="{{url_for('index')}}" class="center-align">Home</a></li>
+            <li><a href="#" class="center-align">Book Library</a></li>
+            <li><a href="#" class="center-align">Add Book</a></li>
+            <li><a href="#" class="center-align">Sign Out</a></li>
+        </ul>
+    </header>
 
     {% block content %}
     {% endblock %}
