@@ -37,6 +37,30 @@ def index():
 # Building registration function
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+    # Checks if the username already exists in the database
+    # Check if the username from the form element already exists within the database. Which is assigned to a new variable called "existing user"
+    # The 'find_one" method is used here
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+        # This block says if the username already exists, flash a message on the screen that tells the user.
+        if existing_user:
+            flash("Username already exists")
+            # This line of code will send user back to the register page so that they can try again.
+            return redirect(url_for("register"))
+
+        # This variable is a dictionary and will insert the successful registrants into our database.
+        register = {
+            # The first item is username which will be set to get the username from the form
+            "username": request.form.get("username").lower(),
+            # The second item is password which will be set to get the password from the form throuhg Werkzeug.Security through password hashing.
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+        # Put the new user into 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash("Registration Successful!")
     return render_template("register.html")
 
 # Telling the app how and where to run the application
