@@ -9,6 +9,8 @@ from flask_pymongo import PyMongo
 # MongoDB stores its data in a JSON-like format called BSON.
 # In order to find documents from MongoDB I need to be able to render the ObjectId
 from bson.objectid import ObjectId
+# Importing security helpers
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
 
@@ -31,8 +33,13 @@ mongo = PyMongo(app) # (app) is the Flask object referenced above
 def index():
     return render_template("index.html")
 
-# Telling the app how and where to run the application
 
+# Building registration function
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
+
+# Telling the app how and where to run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 
             port=int(os.environ.get("PORT")),
