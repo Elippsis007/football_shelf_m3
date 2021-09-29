@@ -1,0 +1,15 @@
+Installing Flask:
+1.  pip3 install Flask
+
+
+Creating python app file:
+2. touch app.py
+
+Creating env.py file to store sensitive data:
+3. touch env.py
+
+Creating a file so that GitHub ignores:
+4. touch .gitignore
+
+Run app:
+5. python3 app.py
