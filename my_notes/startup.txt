@@ -13,3 +13,37 @@ Creating a file so that GitHub ignores:
 
 Run app:
 5. python3 app.py
+
+ 
+Heroku setup
+
+1. Telling Heroku what applications and dependencies are required to run our Flask app
+
+2. Command: pip3 freeze --local > requirements
+
+3. Procfile: A file Heroku looks for and to know which file runs the app, and how to
+run it.
+Command: echo web: python app.py > Procfile
+
+
+Connecting Flask to MongoDB
+
+1. A working connection between your application and your database
+2. It allows your application to programmatically perform CRUD actions on your database (e.g. so your application can read in your data)
+3. Connect your database and application by using a database URL. To help Flask talk to Mongo, you'll install a library called flask-pymongo.
+
+Command: pip3 install flask-pymongo
+
+
+Installing dnspython
+
+1. This is required so I can use the Mongo SRV connection string
+
+Command: pip3 install dnspython
+
+
+Requirements.txt
+
+1. Important that I remember to update the requirements.txt file when installing new packages
+
+Command: pip3 freeze --local > requirements.txt
