@@ -1,3 +1,17 @@
+
+.collapsible-body {
+  display: none;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2rem;
+  background: white;
+}
+
+.bold_p {
+  font-weight: bold;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -31,3 +45,4 @@
   .flashes h4 {
       line-height: 3;
   }
+
