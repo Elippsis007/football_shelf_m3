@@ -21,3 +21,22 @@
   line-height: 3;
 }
 
+.btn-floating.btn-small i {
+  line-height: 32.4px;
+  font-size: larger;
+}
+
+.btn-small {
+  margin: 5px;
+}
+
+.collapsible-header {
+  margin-left: 10px;
+  line-height: 42px;
+}
+
+.fa-check-circle {
+  margin-left: 5px;
+  line-height: 42px;
+}
+

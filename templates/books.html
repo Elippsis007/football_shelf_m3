@@ -17,28 +17,32 @@
     <h3 class="amber-text text-darken-4 center-align">Football Library</h3>
 
     <ul class="collapsible">
-        {% for books in books %}
-        <li>
-          <div class="collapsible-header amber-text text-darken-4">
-              <i class="fas fa-book-reader"></i>
-              <strong>{{ books.book_title }}</strong>
-              {% if books.is_read == "yes" %}
-                <i class="far fa-check-circle amber-text text-darken-4 tooltipped"
-                    data-position="right" data-tooltip="You have finished this book!"></i>
-              {% endif %}
+      {% for books in books %}
+      <li>
+        <div class="collapsible-header amber-text text-darken-4">
+          <div class="col s3">
+            <i class="fas fa-book-reader"></i>
+            <a class="btn-floating btn-small waves-effect waves-light orange"><i class="fas fa-pen"></i></a>
+            <a class="btn-floating btn-small waves-effect waves-light blue"><i class="fas fa-check"></i></a>
           </div>
-          <div class="collapsible-body">
-            <div class="center">
-            <img class="activator" src="{{ books.book_cover }}" alt="No Image Available"/>
+          <strong>{{ books.book_title }}</strong>
+          {% if books.is_read == "yes" %}
+          <i class="far fa-check-circle green-text tooltipped" data-position="right"
+            data-tooltip="You have finished this book!"></i>
+          {% endif %}
+        </div>
+        <div class="collapsible-body">
+          <div class="center">
+            <img class="activator" src="{{ books.book_cover }}" alt="No Image Available" />
           </div>
-            <p>{{ books.book_description }}</p>
-            <p><span class="bold_p">Book Category:</span> {{ books.book_category }}</p>
-            <p><span class="bold_p">Book Author:</span> {{ books.book_author }}</p>
-            <p><span class="bold_p">Book Publisher:</span> {{ books.book_publisher }}</p>
-            <p><em>by: {{ books.added_by }}</em></p>
-          </div>
-        </li>
-        {% endfor %}
+          <p>{{ books.book_description }}</p>
+          <p><span class="bold_p">Book Category:</span> {{ books.book_category }}</p>
+          <p><span class="bold_p">Book Author:</span> {{ books.book_author }}</p>
+          <p><span class="bold_p">Book Publisher:</span> {{ books.book_publisher }}</p>
+          <p><em>by: {{ books.added_by }}</em></p>
+        </div>
+      </li>
+      {% endfor %}
     </ul>
 
   {% endblock %}

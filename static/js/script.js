@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('.tooltipped').tooltip();
   });
 
-
+  
   validateMaterializeSelect();
 
   function validateMaterializeSelect() {
@@ -46,4 +46,4 @@ $(document).ready(function () {
       }
     });
   }
-  });
+  
