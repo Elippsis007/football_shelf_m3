@@ -3,8 +3,9 @@
 # In order to use our environment variables, we need to import the 'env' package.
 
 import os
-from flask import (Flask, flash, render_template, 
-redirect, request, session, url_for)
+from flask import (
+    Flask, flash, render_template, 
+    redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 # MongoDB stores its data in a JSON-like format called BSON.
 # In order to find documents from MongoDB I need to be able to render the ObjectId
@@ -91,7 +92,7 @@ def login():
                 # Invalid password match
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
-            
+
         else:
             # username doesn't exist
             flash("Incorrect Username and/or Password")
@@ -123,7 +124,7 @@ def logout():
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
-        is_read = "no" if request.form.get("is_read") else "yes"
+        is_read = "yes" if request.form.get("is_read") else "no"
         books = {
             "book_title": request.form.get("book_title"),
             "book_description": request.form.get("book_description"),
@@ -144,6 +145,22 @@ def add_book():
 
 @app.route("/edit_book/<books_id>", methods=["GET", "POST"])
 def edit_book(books_id):
+    if request.method == "POST":
+        is_read = "yes" if request.form.get("is_read") else "no"
+        submit = {
+            "book_title": request.form.get("book_title"),
+            "book_description": request.form.get("book_description"),
+            "is_read": is_read,
+            "book_cover": request.form.get("book_cover"),
+            "book_author": request.form.get("book_author"),
+            "book_publisher": request.form.get("book_publisher"),
+            "link_to_worldwide_book_store": request.form.get(
+                "link_to_worldwide_book_store"),
+            "added_by": session["user"]
+        }
+        mongo.db.books.update({"_id": ObjectId(books_id)}, submit)
+        flash("Task Successfully Edited")
+
     books = mongo.db.books.find_one({"_id": ObjectId(books_id)})
     return render_template("edit_book.html", books=books)
 

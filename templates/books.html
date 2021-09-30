@@ -22,8 +22,10 @@
         <div class="collapsible-header amber-text text-darken-4">
           <div class="col s3">
             <i class="fas fa-book-reader"></i>
-            <a href="{{ url_for('edit_book', books_id=books._id) }}" class="btn-floating btn-small waves-effect waves-light orange"><i class="fas fa-pen"></i></a>
-            <a class="btn-floating btn-small waves-effect waves-light blue"><i class="fas fa-check"></i></a>
+            {% if session.user|lower == books.added_by|lower %}
+              <a href="{{ url_for('edit_book', books_id=books._id) }}" class="btn-floating btn-small waves-effect waves-light orange"><i class="fas fa-pen"></i></a>
+              <a class="btn-floating btn-small waves-effect waves-light blue"><i class="fas fa-check"></i></a>
+            {% endif %}
           </div>
           <strong>{{ books.book_title }}</strong>
           {% if books.is_read == "yes" %}
