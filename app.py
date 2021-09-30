@@ -120,12 +120,31 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_book")
+@app.route("/add_book", methods=["GET", "POST"])
 def add_book():
+    if request.method == "POST":
+        is_read = "no" if request.form.get("is_read") else "yes"
+        books = {
+            "book_title": request.form.get("book_title"),
+            "book_description": request.form.get("book_description"),
+            "is_read": is_read,
+            "book_cover": request.form.get("book_cover"),
+            "book_author": request.form.get("book_author"),
+            "book_publisher": request.form.get("book_publisher"),
+            "link_to_worldwide_book_store": request.form.get(
+                "link_to_worldwide_book_store"),
+            "added_by": session["user"]
+        }
+        mongo.db.books.insert_one(books)
+        flash("Book has been succesfully added!")
+        return redirect(url_for("get_books"))
+
     return render_template("add_book.html")
+
 
 # Telling the app how and where to run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 
             port=int(os.environ.get("PORT")),
-            debug=True) # Be sure to change to FALSE upon deployment
+            debug=True) 
+            # Be sure to change to FALSE upon deployment

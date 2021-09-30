@@ -15,9 +15,9 @@
     -->
 
     <h3 class="amber-text text-darken-1 center-align">Add Book</h3>
-
+    <!-- Book Title -->
     <div class="row card-panel">
-        <form class="col s12" method="POST" action="">
+        <form class="col s12" method="POST" action="{{ url_for('add_book') }}">
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-book prefix amber-text text-darken-1"></i>
@@ -26,7 +26,7 @@
                     <label for="book_title">Book Title</label>
                 </div>
             </div>
-
+            <!-- Book Cover Image -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-image prefix amber-text text-darken-1"></i>
@@ -35,7 +35,7 @@
                     <label for="book_cover">Book Cover Image</label>
                 </div>
             </div>
-
+            <!-- Book Description -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix amber-text text-darken-1"></i>
@@ -44,7 +44,7 @@
                     <label for="book_description">Book Description</label>
                 </div>
             </div>
-
+            <!-- Book Author -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-edit prefix amber-text text-darken-1"></i>
@@ -53,7 +53,7 @@
                     <label for="book_author">Book Author</label>
                 </div>
             </div>
-
+            <!-- Book Publisher -->
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-laptop prefix amber-text text-darken-1"></i>
@@ -62,6 +62,17 @@
                     <label for="book_publisher">Book Publisher</label>
                 </div>
             </div>
+            <!-- Link to Worldwide Online Book Store -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-link prefix amber-text text-darken-1"></i>
+                    <input id="link_to_worldwide_book_store" 
+                    name="link_to_worldwide_book_store" type="text" 
+                    minlength="5" maxlength="200" class="validate" required>
+                    <label for="link_to_worldwide_book_store">Book Store Url</label>
+                </div>
+            </div>
+            <!-- Book Read Switch -->
             <div class="row">
                 <div class="input-field col s12">
                     <div class="switch">
@@ -72,6 +83,12 @@
                             Have you read this book?
                         </label>
                     </div>
+                </div>
+            </div>
+            <!-- Submit Button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large amber darken-1 text-shadow"><i class="fas fa-plus"></i></button>
                 </div>
             </div>
         </form>

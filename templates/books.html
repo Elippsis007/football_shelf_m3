@@ -14,6 +14,8 @@
     {% endfor %}
     -->
 
+    <h3 class="amber-text text-darken-1 center-align">Football Library</h3>
+
     <ul class="collapsible">
         {% for books in books %}
         <li>
@@ -33,6 +35,7 @@
             <p><span class="bold_p">Book Category:</span> {{ books.book_category }}</p>
             <p><span class="bold_p">Book Author:</span> {{ books.book_author }}</p>
             <p><span class="bold_p">Book Publisher:</span> {{ books.book_publisher }}</p>
+            <p><em>by: {{ books.added_by }}</em></p>
           </div>
         </li>
         {% endfor %}
