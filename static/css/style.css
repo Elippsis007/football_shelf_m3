@@ -18,7 +18,7 @@
 
 /* label color */
 .input-field label {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0.3);
   }
   /* label focus color */
   .input-field input[type=text]:focus + label {
