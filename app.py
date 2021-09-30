@@ -120,6 +120,10 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/add_book")
+def add_book():
+    return render_template("add_book.html")
+
 # Telling the app how and where to run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 

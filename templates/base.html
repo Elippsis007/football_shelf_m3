@@ -27,7 +27,7 @@
                     {% if session.user %}
                         <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">Member Library</a></li>
                         <li><a href="{{ url_for('get_books') }}" class="center-align">Books</a></li>
-                        <li><a href="#" class="center-align">Add Book</a></li>
+                        <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
                         <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
                     {% else %}
                         <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
@@ -43,7 +43,7 @@
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">Member Library</a></li>
                 <li><a href="{{ url_for('get_books') }}" class="center-align">Books</a></li>
-                <li><a href="#" class="center-align">Add Book</a></li>
+                <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
                 <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
