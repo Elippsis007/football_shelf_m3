@@ -19,18 +19,20 @@
         <!-- Top Navbar -->
         <nav>
             <div class="nav-wrapper text-shadow amber darken-4">
-                <a href="{{ url_for('index') }}" class="brand-logo">The Football Shelf</a>
+                <a href="{{ url_for('home') }}" class="brand-logo">The Football Shelf</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-chevron-circle-down"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('index') }}" class="center-align">Home</a></li>
                     {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">Member Library</a></li>
-                        <li><a href="{{ url_for('get_books') }}" class="center-align">Books</a></li>
-                        <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
-                        <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
+                            <li><a href="{{ url_for('get_books') }}" class="center-align">Home</a></li>
+                            <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">Member Library</a></li>
+                            <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
+                        {% if session.user|lower == "admin"|lower %}
+                            <li><a href="{{ url_for('library_genre') }}" class="center-align">Manage Football Genres</a></li>
+                        {% endif %}
+                            <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
                     {% else %}
-                        <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
-                        <li><a href="{{ url_for('register') }}" class="center-align">Register</a></li>
+                            <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
+                            <li><a href="{{ url_for('register') }}" class="center-align">Register</a></li>
                     {% endif %}
                 </ul>
             </div>
@@ -38,11 +40,13 @@
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
             <li><h4 class="center-align text-shadow amber-text text-darken-4">The Football Shelf</h4></li>
-            <li><a href="{{ url_for('index') }}" class="center-align">Home</a></li>
             {% if session.user %}
+                <li><a href="{{ url_for('get_books') }}" class="center-align">Home</a></li>
                 <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">Member Library</a></li>
-                <li><a href="{{ url_for('get_books') }}" class="center-align">Books</a></li>
                 <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
+                {% if session.user|lower == "admin"|lower %}
+                    <li><a href="{{ url_for('library_genre') }}" class="center-align">Manage Football Genres</a></li>
+                {% endif %}
                 <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
             {% else %}
                 <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>

@@ -30,14 +30,14 @@ mongo = PyMongo(app) # (app) is the Flask object referenced above
 
 # Landing page
 @app.route("/")
-@app.route("/index")
-def index():
-    return render_template("index.html")
+@app.route("/home")
+def home():
+    return render_template("home.html")
 
 @app.route("/get_books")
 def get_books():
     books = list(mongo.db.books.find())
-    return render_template("books.html", books=books)
+    return render_template("home.html", books=books)
 
 
 # Building registration function
@@ -172,6 +172,12 @@ def delete_book(books_id):
     mongo.db.books.remove({"_id": ObjectId(books_id)})
     flash("Book Successfully Deleted")
     return redirect(url_for("get_books"))
+
+
+@app.route("/library_genre")
+def library_genre():
+    library_genre = list(mongo.db.library_genre.find().sort("football_genre", 1))
+    return render_template("genres.html", library_genre=library_genre)
 
 
 # Telling the app how and where to run the application
