@@ -44,9 +44,9 @@ def get_books():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-    # Checks if the username already exists in the database
-    # Check if the username from the form element already exists within the database. Which is assigned to a new variable called "existing user"
-    # The 'find_one" method is used here
+        # Checks if the username already exists in the database
+        # Check if the username from the form element already exists within the database. Which is assigned to a new variable called "existing user"
+        # The 'find_one" method is used here
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
         # This block says if the username already exists, flash a message on the screen that tells the user.
@@ -78,7 +78,7 @@ def login():
         # check if username exists in db
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
-        
+
         if existing_user:
             # Make sure hashed password matches what that user had put in
             if check_password_hash(
@@ -176,7 +176,8 @@ def delete_book(books_id):
 
 @app.route("/library_genre")
 def library_genre():
-    library_genre = list(mongo.db.library_genre.find().sort("football_genre", 1))
+    library_genre = list(
+        mongo.db.library_genre.find().sort("football_genre", 1))
     return render_template("genres.html", library_genre=library_genre)
 
 
@@ -191,6 +192,22 @@ def add_genre():
         return redirect(url_for("library_genre"))
 
     return render_template("add_genre.html")
+
+
+@app.route("/edit_genre/<genre_id>", methods=["GET", "POST"])
+def edit_genre(genre_id):
+    if request.method == "POST":
+        submit = {
+            "football_genre": request.form.get("football_genre")
+        }
+        mongo.db.library_genre.update({"_id": ObjectId(genre_id)}, submit)
+        flash("Genre Successfully Edited")
+        return redirect(url_for("library_genre"))
+
+    genre = mongo.db.library_genre.find_one(
+        {"_id": ObjectId(genre_id)})
+    return render_template("edit_genre.html", genre=genre)
+
 
 
 # Telling the app how and where to run the application
