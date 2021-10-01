@@ -180,6 +180,19 @@ def library_genre():
     return render_template("genres.html", library_genre=library_genre)
 
 
+@app.route("/add_genre", methods=["GET", "POST"])
+def add_genre():
+    if request.method == "POST":
+        genre = {
+            "football_genre": request.form.get("genre_name")
+        }
+        mongo.db.library_genre.insert_one(genre)
+        flash("New Genre Added")
+        return redirect(url_for("library_genre"))
+
+    return render_template("add_genre.html")
+
+
 # Telling the app how and where to run the application
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 
