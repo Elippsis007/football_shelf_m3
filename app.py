@@ -209,6 +209,12 @@ def edit_genre(genre_id):
     return render_template("edit_genre.html", genre=genre)
 
 
+@app.route("/delete_genre/<genre_id>")
+def delete_genre(genre_id):
+    mongo.db.library_genre.remove({"_id": ObjectId(genre_id)})
+    flash("Genre Has Been Successfully Removed")
+    return redirect(url_for("library_genre"))
+
 
 # Telling the app how and where to run the application
 if __name__ == "__main__":
