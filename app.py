@@ -131,6 +131,7 @@ def add_book():
             "is_read": is_read,
             "book_cover": request.form.get("book_cover"),
             "book_author": request.form.get("book_author"),
+            "football_genre": request.form.get("football_genre"),
             "book_publisher": request.form.get("book_publisher"),
             "link_to_worldwide_book_store": request.form.get(
                 "link_to_worldwide_book_store"),
@@ -153,6 +154,7 @@ def edit_book(books_id):
             "is_read": is_read,
             "book_cover": request.form.get("book_cover"),
             "book_author": request.form.get("book_author"),
+            "football_genre": request.form.get("football_genre"),
             "book_publisher": request.form.get("book_publisher"),
             "link_to_worldwide_book_store": request.form.get(
                 "link_to_worldwide_book_store"),

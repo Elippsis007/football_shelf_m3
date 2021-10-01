@@ -3,7 +3,7 @@
 
 <!-- 
     {% for book in books %}
-        {{ books.book_category }} <br>
+        {{ books.football_genre }} <br>
         {{ books.book_title }} <br>
         {{ books.is_read}} <br>
         {{ books.book_cover }}
@@ -53,6 +53,15 @@
                     <input id="book_author" name="book_author" type="text" 
                     value="{{ books.book_author}}" minlength="5" maxlength="50" class="validate" required>
                     <label for="book_author">Book Author</label>
+                </div>
+            </div>
+            <!-- Football Genre -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-laptop prefix amber-text text-darken-1"></i>
+                    <input id="football_genre" name="football_genre" type="text" 
+                    value="{{ books.football_genre }}" minlength="5" maxlength="70" class="validate" required>
+                    <label for="football_genre">Football Genre</label>
                 </div>
             </div>
             <!-- Book Publisher -->
