@@ -13,8 +13,9 @@
         {{ books.link_to_worldwide_book_store }} <br>
     {% endfor %}
     -->
-
-    <h3 class="amber-text text-darken-4 center-align">Add Book</h3>
+    <div class="card">
+        <h3 class="amber-text text-darken-4 center-align">Add Book</h3>
+    </div>
     <!-- Book Title -->
     <div class="row card-panel">
         <form class="col s12" method="POST" action="{{ url_for('add_book') }}">
