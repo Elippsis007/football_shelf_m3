@@ -29,9 +29,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app) # (app) is the Flask object referenced above
 
 # Landing page
-@app.route("/get_books")
-def get_books():
-    return render_template("get_books.html")
+@app.route("/")
 
 @app.route("/get_books")
 def get_books():
