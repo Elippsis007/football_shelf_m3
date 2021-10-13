@@ -4,7 +4,7 @@
 
 import os
 from flask import (
-    Flask, flash, render_template, 
+    Flask, flash, render_template,
     redirect, request, session, url_for)
 from flask_pymongo import PyMongo
 # MongoDB stores its data in a JSON-like format called BSON.
@@ -29,6 +29,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app) # (app) is the Flask object referenced above
 
 # Landing page
+@app.route("/get_books")
+def get_books():
+    return render_template("get_books.html")
+
 @app.route("/get_books")
 def get_books():
     books = list(mongo.db.books.find())
@@ -64,7 +68,6 @@ def register():
         flash("Registration Successful!")
         return redirect(url_for("profile", username=session["user"]))
     return render_template("register.html")
-
 
 
 @app.route("/login", methods=["GET", "POST"])
