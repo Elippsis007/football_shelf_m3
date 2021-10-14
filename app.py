@@ -120,17 +120,16 @@ def logout():
 @app.route("/add_book", methods=["GET", "POST"])
 def add_book():
     if request.method == "POST":
-        is_read = "yes" if request.form.get("is_read") else "no"
         books = {
             "book_title": request.form.get("book_title"),
             "book_description": request.form.get("book_description"),
-            "is_read": is_read,
             "book_cover": request.form.get("book_cover"),
             "book_author": request.form.get("book_author"),
             "football_genre": request.form.get("football_genre"),
             "book_publisher": request.form.get("book_publisher"),
             "link_to_worldwide_book_store": request.form.get(
                 "link_to_worldwide_book_store"),
+                "book_rating": request.form.get("book_rating"),
             "added_by": session["user"]
         }
         mongo.db.books.insert_one(books)
@@ -143,17 +142,16 @@ def add_book():
 @app.route("/edit_book/<books_id>", methods=["GET", "POST"])
 def edit_book(books_id):
     if request.method == "POST":
-        is_read = "yes" if request.form.get("is_read") else "no"
         submit = {
             "book_title": request.form.get("book_title"),
             "book_description": request.form.get("book_description"),
-            "is_read": is_read,
             "book_cover": request.form.get("book_cover"),
             "book_author": request.form.get("book_author"),
             "football_genre": request.form.get("football_genre"),
             "book_publisher": request.form.get("book_publisher"),
             "link_to_worldwide_book_store": request.form.get(
                 "link_to_worldwide_book_store"),
+            "book_rating": request.form.get("book_rating"),
             "added_by": session["user"]
         }
         mongo.db.books.update({"_id": ObjectId(books_id)}, submit)

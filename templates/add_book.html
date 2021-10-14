@@ -5,12 +5,12 @@
     {% for book in books %}
         {{ books.book_category }} <br>
         {{ books.book_title }} <br>
-        {{ books.is_read}} <br>
         {{ books.book_cover }}
         {{ books.book_description }} <br>
         {{ books.book_author }} <br>
         {{ books.book_publisher }} <br>
-        {{ books.link_to_worldwide_book_store }} <br>
+        {{ books.link_to_worldwide_book_store }}
+        {{ books.book_rating }} <br>
     {% endfor %}
     -->
     <div class="card">
@@ -82,19 +82,16 @@
                     <label for="link_to_worldwide_book_store">Book Store Url</label>
                 </div>
             </div>
-            <!-- Book Read Switch -->
+            <!-- Rate the book -->
             <div class="row">
                 <div class="input-field col s12">
-                    <div class="switch">
-                        <i class="far fa-check-circle fa-2x amber-text text-darken-1"></i>
-                        <label for="is_read">
-                            <input type="checkbox" id="is_read" name="is_read" required>
-                            <span class="lever"></span>
-                            Have you read this book?
-                        </label>
-                    </div>
+                    <i class="fas fa-pen-alt prefix amber-text text-darken-1"></i>
+                    <input name="book_rating" type="text"
+                    minlength="5" maxlength="200" class="validate" required>
+                    <label class="title_size" for="book_rating">Rate This Book</label>
                 </div>
             </div>
+            <br>
             <!-- Submit Button -->
             <div class="row">
                 <div class="col s12 center-align">

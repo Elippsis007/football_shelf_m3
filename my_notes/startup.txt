@@ -1,7 +1,6 @@
 Installing Flask:
 1.  pip3 install Flask
 
-
 Creating python app file:
 2. touch app.py
 
@@ -14,7 +13,12 @@ Creating a file so that GitHub ignores:
 Run app:
 5. python3 app.py
 
- 
+pip3 install flask
+pip3 install pymongo
+python -m pip install "pymongo[srv]"
+pip3 install dnspython
+pip3 install flask_pymongo
+
 Heroku setup
 
 1. Telling Heroku what applications and dependencies are required to run our Flask app

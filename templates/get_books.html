@@ -16,12 +16,8 @@
               <a href="{{ url_for('delete_book', books_id=books._id) }}" class="btn-floating btn-small waves-effect waves-light blue"><i class="fas fa-check"></i></a>
             {% endif %}
           </div>
-          <strong>{{ books.book_title }}</strong>
-          {% if books.is_read == "yes" %}
-          <i class="far fa-check-circle green-text tooltipped" data-position="right"
-            data-tooltip="You have finished this book!"></i>
-          {% endif %}
-        </div>
+            <strong>{{ books.book_title }}</strong>
+          </div>
         <div class="collapsible-body">
           <div class="center">
             <img class="activator" src="{{ books.book_cover }}" alt="No Image Available" />
@@ -30,6 +26,7 @@
           <p><span class="bold_p">Book Genre:</span> {{ books.football_genre }}</p>
           <p><span class="bold_p">Book Author:</span> {{ books.book_author }}</p>
           <p><span class="bold_p">Book Publisher:</span> {{ books.book_publisher }}</p>
+          <p><span class="bold_p">Book Rating:</span> {{ books.book_rating }}</p>
           <p><em>by: {{ books.added_by }}</em></p>
         </div>
       </li>
