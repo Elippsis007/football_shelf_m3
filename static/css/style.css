@@ -2,6 +2,29 @@ body {
   background-image: url("/static/images/soccer_pitch.jpg");
 }
 
+h3 {
+  line-height: 150%;
+  background-color: white;
+  color: #ff6f00;
+  font-size: 2.92rem;
+  margin: 1.9466666667rem 0 1.168rem 0;
+}
+
+#h3-profile {
+  background-color: #ff6f00;
+  font-size: 2.92rem;
+  line-height: 200%;
+  margin: 1.9466666667rem 0 1.168rem 0;
+}
+
+nav .brand-logo {
+  position: absolute;
+  color: #fff;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding-left: 5px;
+}
+
 .collapsible-body {
   display: none;
   border-bottom: 1px solid #ddd;
@@ -45,4 +68,8 @@ body {
 
 .profile_p {
   color: white;
+}
+
+.sidenav {
+  background-image: url("/static/images/soccer-football-background.jpg"); 
 }

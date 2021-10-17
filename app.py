@@ -37,6 +37,14 @@ def get_books():
     return render_template("get_books.html", books=books)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    books = list(mongo.db.books.find({"$text": {"$search": query}}))
+    return render_template("get_books.html", books=books)
+
+
+
 # Building registration function
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -155,7 +163,7 @@ def edit_book(books_id):
             "added_by": session["user"]
         }
         mongo.db.books.update({"_id": ObjectId(books_id)}, submit)
-        flash("Task Successfully Edited")
+        flash("Book Successfully Edited")
 
     books = mongo.db.books.find_one({"_id": ObjectId(books_id)})
     return render_template("edit_book.html", books=books)

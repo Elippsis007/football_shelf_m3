@@ -39,10 +39,12 @@
         </nav>
         <!-- Mobile sidenav -->
         <ul class="sidenav" id="mobile-demo">
+            <div class="card">
             <li><h4 class="center-align text-shadow amber-text text-darken-4">The Football Shelf</h4></li>
+                <hr>
             {% if session.user %}
                 <li><a href="{{ url_for('get_books') }}" class="center-align">Home</a></li>
-                <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">Member Library</a></li>
+                <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">User Page</a></li>
                 <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
                 {% if session.user|lower == "admin"|lower %}
                     <li><a href="{{ url_for('library_genre') }}" class="center-align">Manage Football Genres</a></li>
@@ -52,6 +54,7 @@
                 <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
                 <li><a href="{{ url_for('register') }}" class="center-align">Register</a></li>
             {% endif %}
+            </div>
         </ul>
     </header>
 
@@ -60,9 +63,11 @@
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for message in messages %}
+            <div class="card">
                 <div class="row flashes">
                     <h4 class="amber-text text-darken-4 center-align">{{ message }}</h4>
                 </div>
+            </div>
             {% endfor %}
         {% endif %}
     {% endwith %}
