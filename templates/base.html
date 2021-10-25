@@ -84,5 +84,29 @@
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     {% block scripts %}
     {% endblock %}
+
+    {% block footer %}
+    <footer class="page-footer amber darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/"><i class="fab fa-facebook fa-3x"></i></a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/"><i class="fab fa-instagram fa-3x"></i></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter fa-3x"></i></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-linkedin fa-3x"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </div>
+    </footer>
+    {% endblock %}
+
 </body>
 </html>

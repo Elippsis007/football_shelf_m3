@@ -1,5 +1,12 @@
 body {
   background-image: url("/static/images/soccer_pitch.jpg");
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 h3 {
