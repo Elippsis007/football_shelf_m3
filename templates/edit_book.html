@@ -10,17 +10,17 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-book prefix amber-text text-darken-1"></i>
-                    <input id="book_title" name="book_title" type="text" 
-                    value="{{ books.book_title }}" maxlength="70" class="validate" required>
+                    <input id="book_title" name="book_title" type="text" value="{{ books.book_title }}" maxlength="70"
+                        class="validate" required>
                     <label for="book_title">Book Title</label>
                 </div>
             </div>
             <!-- Book Cover Image -->
-            <div class="row"> 
+            <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-image prefix amber-text text-darken-1"></i>
-                    <input id="book_cover" name="book_cover" type="text" 
-                    value="{{ books.book_cover }}" minlength="5" maxlength="250" class="validate" required>
+                    <input id="book_cover" name="book_cover" type="text" value="{{ books.book_cover }}" minlength="5"
+                        maxlength="250" class="validate" required>
                     <label for="book_cover">Book Cover Image</label>
                 </div>
             </div>
@@ -28,8 +28,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix amber-text text-darken-1"></i>
-                    <textarea id="book_description" name="book_description" 
-                    minlength="5" maxlength="1500" class="materialize-textarea validate" required>
+                    <textarea id="book_description" name="book_description" minlength="5" maxlength="1500"
+                        class="materialize-textarea validate" required>
                     {{- books.book_description -}}
                     </textarea>
                     <label for="book_description">Book Description</label>
@@ -39,8 +39,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-user-edit prefix amber-text text-darken-1"></i>
-                    <input id="book_author" name="book_author" type="text" 
-                    value="{{ books.book_author}}" minlength="5" maxlength="50" class="validate" required>
+                    <input id="book_author" name="book_author" type="text" value="{{ books.book_author}}" minlength="5"
+                        maxlength="50" class="validate" required>
                     <label for="book_author">Book Author</label>
                 </div>
             </div>
@@ -48,8 +48,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-laptop prefix amber-text text-darken-1"></i>
-                    <input id="football_genre" name="football_genre" type="text" 
-                    value="{{ books.football_genre }}" minlength="5" maxlength="70" class="validate" required>
+                    <input id="football_genre" name="football_genre" type="text" value="{{ books.football_genre }}"
+                        minlength="5" maxlength="70" class="validate" required>
                     <label for="football_genre">Football Genre</label>
                 </div>
             </div>
@@ -57,8 +57,8 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-laptop prefix amber-text text-darken-1"></i>
-                    <input id="book_publisher" name="book_publisher" type="text" 
-                    value="{{ books.book_publisher }}" minlength="5" maxlength="70" class="validate" required>
+                    <input id="book_publisher" name="book_publisher" type="text" value="{{ books.book_publisher }}"
+                        minlength="5" maxlength="70" class="validate" required>
                     <label for="book_publisher">Book Publisher</label>
                 </div>
             </div>
@@ -66,9 +66,9 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-link prefix amber-text text-darken-1"></i>
-                    <input id="link_to_worldwide_book_store" 
-                    name="link_to_worldwide_book_store" type="text" 
-                    value="{{ books.link_to_worldwide_book_store }}" minlength="5" maxlength="200" class="validate" required>
+                    <input id="link_to_worldwide_book_store" name="link_to_worldwide_book_store" type="text"
+                        value="{{ books.link_to_worldwide_book_store }}" minlength="5" maxlength="200" class="validate"
+                        required>
                     <label for="link_to_worldwide_book_store">Book Store Url</label>
                 </div>
             </div>
@@ -77,8 +77,8 @@
                 <div class="input-field col s12">
                     <i class="fas fa-pen-alt prefix amber-text text-darken-1"></i>
                     <label class="title_size" for="book_rating">Rate This Book</label>
-                   <input id="book_rating" name="book_rating" type="text" 
-                        value="{{ books.book_rating }}" class="validate" required>
+                    <input id="book_rating" name="book_rating" type="text" value="{{ books.book_rating }}"
+                        class="validate" required>
                 </div>
             </div>
             <!-- Edit Book Button -->
@@ -88,7 +88,8 @@
                     <a href="{{ url_for('get_books') }}" class="btn-large red text-shadow">
                         <i class="fas fa-ban"></i>
                     </a>
-                    <button type="submit" class="btn-large amber darken-4 text-shadow"><i class="fas fa-edit"></i></button>
+                    <button type="submit" class="btn-large amber darken-4 text-shadow"><i
+                            class="fas fa-edit"></i></button>
                 </div>
             </div>
         </form>

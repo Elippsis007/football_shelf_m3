@@ -4,7 +4,7 @@
   <div class="card-panel">
     <h3 class="amber-text text-darken-4 center-align">The Football Shelf</h3>
   </div>
- 
+
   <div class="card-panel white darken-4">
     <form action="{{ url_for('search') }}" method="POST" class="col s12">
       <div class="row valign-wrapper center-align">
@@ -14,47 +14,49 @@
           <label for="query">Search Books</label>
         </div>
         <div class="col s12 m4">
-            <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
-            <button type="submit" class="amber darken-4 btn text-shadow">
-              <i class="fas fa-search left"></i>Search
-            </button>
+          <a href="{{ url_for('get_books') }}" class="red btn text-shadow">Reset</a>
+          <button type="submit" class="amber darken-4 btn text-shadow">
+            <i class="fas fa-search left"></i>Search
+          </button>
         </div>
       </div>
     </form>
   </div>
 
-    {% if books|length > 0 %}
-    <ul class="collapsible">
-      {% for books in books %}
-      <li>
-        <div class="collapsible-header amber-text text-darken-4">
-          <div class="col s3">
-            <i class="fas fa-book-reader"></i>
-            {% if session.user|lower == books.added_by|lower %}
-              <a href="{{ url_for('edit_book', books_id=books._id) }}" class="btn-floating btn-small waves-effect waves-light orange"><i class="fas fa-pen"></i></a>
-              <a href="{{ url_for('delete_book', books_id=books._id) }}" class="btn-floating btn-small waves-effect waves-light blue"><i class="fas fa-check"></i></a>
-            {% endif %}
-          </div>
-            <strong>{{ books.book_title }}</strong>
-          </div>
-        <div class="collapsible-body">
-          <div class="center">
-            <img class="activator" src="{{ books.book_cover }}" alt="No Image Available" />
-          </div>
-          <p>{{ books.book_description }}</p>
-          <p><span class="bold_p">Book Genre:</span> {{ books.football_genre }}</p>
-          <p><span class="bold_p">Book Author:</span> {{ books.book_author }}</p>
-          <p><span class="bold_p">Book Publisher:</span> {{ books.book_publisher }}</p>
-          <p><span class="bold_p">Book Rating:</span> {{ books.book_rating }}</p>
-          <p><em>by: {{ books.added_by }}</em></p>
+  {% if books|length > 0 %}
+  <ul class="collapsible">
+    {% for books in books %}
+    <li>
+      <div class="collapsible-header amber-text text-darken-4">
+        <div class="col s3">
+          <i class="fas fa-book-reader"></i>
+          {% if session.user|lower == books.added_by|lower %}
+          <a href="{{ url_for('edit_book', books_id=books._id) }}"
+            class="btn-floating btn-small waves-effect waves-light orange"><i class="fas fa-pen"></i></a>
+          <a href="{{ url_for('delete_book', books_id=books._id) }}"
+            class="btn-floating btn-small waves-effect waves-light blue"><i class="fas fa-check"></i></a>
+          {% endif %}
         </div>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <div class="card-panel">
-      <h3 class="amber-text text-darken-4 center-align">No Results Found</h3>
-    </div>
-    {% endif %}
+        <strong>{{ books.book_title }}</strong>
+      </div>
+      <div class="collapsible-body">
+        <div class="center">
+          <img class="activator" src="{{ books.book_cover }}" alt="No Image Available" />
+        </div>
+        <p>{{ books.book_description }}</p>
+        <p><span class="bold_p">Book Genre:</span> {{ books.football_genre }}</p>
+        <p><span class="bold_p">Book Author:</span> {{ books.book_author }}</p>
+        <p><span class="bold_p">Book Publisher:</span> {{ books.book_publisher }}</p>
+        <p><span class="bold_p">Book Rating:</span> {{ books.book_rating }}</p>
+        <p><em>by: {{ books.added_by }}</em></p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <div class="card-panel">
+    <h3 class="amber-text text-darken-4 center-align">No Results Found</h3>
+  </div>
+  {% endif %}
 
-  {% endblock %}
+{% endblock %}
