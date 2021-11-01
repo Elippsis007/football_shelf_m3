@@ -222,5 +222,5 @@ def delete_genre(genre_id):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 
             port=int(os.environ.get("PORT")),
-            debug=True) 
+            debug=FALSE) 
             # Be sure to change to FALSE upon deployment
