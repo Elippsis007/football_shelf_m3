@@ -1,7 +1,11 @@
 <h1 align="center">The Football Shelf</h1>
 
+## Project Overview
+
 This is The Football Shelf a simple project, a website designed to be responsive and accessible for a range of devices, making it easy to navigate for the information the user is seeking in relation to the greatest game.. football.
 
+
+## Deployed Site
 [View the live project here.](https://flask-football-shelf.herokuapp.com/)
 
 <h2 align="center"><img src="*****"></h2>
