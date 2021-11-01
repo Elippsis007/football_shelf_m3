@@ -8,7 +8,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
 ## Deployed Site
 [View the live project here.](https://flask-football-shelf.herokuapp.com/)
 
-<h2 align="center"><img src="*****"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Responsive_image/Responsive_Design.png"></h2>
 
 ## User Experience (UX)
 
