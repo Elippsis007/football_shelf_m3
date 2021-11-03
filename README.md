@@ -56,20 +56,24 @@ This is The Football Shelf a simple project, a website designed to be responsive
     
    #### The Home page includes:
 -   A search where users can search for keywords that appear in the Football Library.
+
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Search_Bar.png"></h2>
     
    ##### Home page collapsible:
 -  Clicking on the collapsible displays books in an accordion style.
    
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Home%20Page%20-%20Collapsible.png?raw=true"></h2>
 
-#### The  Physiotherapy & Pilates page includes:
--   A quick to read page of the services that Bruna Fernandes Physiotherapy is offering to all clients.
-    It's not supposed to be in-depth information, just an overview of what is on offer.
-   
-   #### The Appointment page includes:
--   An Appointment request card. This is very easy to use, looking for your name and email address. The user will then click the dropdown to choose the problem and then can proceed to check multiple (if required) problems related to their query and then choose a time that suits an appointment and lastly a date that can be chosen by clicking the calendar button and simply hitting send.
+#### The User/Admin page includes:
+-   A welcome message just under the navbar.
+-   A simple card with an option to add a Football Book to the library.
 
-    <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/appointment_screenshot.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/User_Admin%20Page.png?raw=true"></h2>
+   
+   #### Add a book page includes:
+-   A form with multiple fields for the user to fill out. If a user wishes to add a book to the library then all fields are required to be filled out. At the end of the form there is a submit button, if a field is left blank it will prevent the user from submitting the book to the library database.
+
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png?raw=true"></h2>
 
 -   The next card is for COVID 19 a breakdown of appointment guidelines for the user prior to attending their chosen appointment.
     The user must click the C19 form text for a page to open in a separate tab to download the form and fill in the details required.
