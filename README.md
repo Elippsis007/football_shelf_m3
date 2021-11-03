@@ -75,91 +75,52 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png?raw=true"></h2>
 
--   The next card is for COVID 19 a breakdown of appointment guidelines for the user prior to attending their chosen appointment.
-    The user must click the C19 form text for a page to open in a separate tab to download the form and fill in the details required.
+   #### Admin Manage Football Genres page:
+-   A page for the admin of the website to manage football genres. The admin has the ability to edit current genres and even remove genres.
     
-    <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/covid_form_screenshot.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png?raw=true"></h2>
     
--   The last card is simply service operation hours with a phone number to call (which, if the user has their mobile phone linked to their computer, a click on this number will     automatically make the call for you on the user's mobile phone.
-
-   ##### Appointment page Modals:
--   Clicking on the send button on the appointment form will display a pop-up modal telling the user that their appointment request has been sent and that they will receive     an email confirming their appointment booking.
-    Clicking the "Thank you!" button on this modal will bring the user back to the Home page.
+   #### Register / Log In / Log Out page:
     
-    <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/appointment_sent_screenshot.png?raw=true"></h2>
-    
--   The Sign In / Sign Up button on the right side of the navigation bar, once clicked will pop-up another modal for users to register for the website.
+-   The register/log in/log out pages share the same layout and style, each have input fields for usernames and passwords. provide the same functionality.
+-   The register page asks users to input a username and password they wish to use for accessing the site. Once these are provided and submitted they are then added to an external database.
+-   Log In page asks the users to input their credentials from registration to give access to their user page and other pages to the website.
 
-   #### The Member page includes:
--   The Member loads with a message to greet the user depending on the time of the day (morning, afternoon and evening) this was done with the use of JavaScript.
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Register.png"></h2>
 
-    <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/javascript_message_screenshot.png?raw=true"></h2>
-
--   The two icons on the Member page are a video camera and an image representing photos. These are clickable icons that would jump to the video section or image section.
--   The Member page is a library of videos and images covering all areas of physiotherapy. The first section of the Member page is 1:1 YouTube videos for members to gain access     to, to watch and use of their own home.
--   After the video section, the member will see a library of images These images have a button below which once clicked, will drop down a paragraph with detailed information     on each image card.
--   Finally at the bottom of the page just above the footer there is a gold up-right arrow icon which is clickable. When this icon is clicked it will scroll the user to the top     of the page.
-
-<h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/scroll_up_arrow_screenshot.png?raw=true"></h2>
-    
-   ##### Member page Modals:
--   The Sign In / Sign Up button on the right side of the navigation bar, once clicked will pop-up another modal for users to register for the website.
-
-#### The Bruna page includes:
--   Bruna's page is simple and kept to the point, the idea is to give users direct easy access to an overview of Bruna professional history.
--   First card is an image of Bruna stating her name and title of profession.
--   The second card is a summary of her past and current professional experience.
--   The last section underneath the two cards is sample degree pictures, the idea is to instil confidence in clients and assurance.
-    
-   ##### Bruna page Modals:
--   The Sign In / Sign Up button on the right side of the navigation bar, once clicked will pop-up another modal for users to register for the website.
-
-#### The Contact page includes:
--   The Contact page is kept simple and easy to use and has two purposes. The first is to give existing and new users the ability to contact Bruna anytime with any query.
--   The second is to provide a written work address and a functioning Google Maps for users to locate the work address and a contact number for users to reach out with.
--   The Contact Us form is simple, it requires the user to input a full name and email. It also has an option for users to type in a message and send their query to Bruna.
-
-<h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/contact_us_screenshot.png?raw=true"></h2>
-    
-   ##### Contact page Modals:
--   The Sign In / Sign Up button on the right side of the navigation bar, once clicked will pop-up another modal for users to register for the website.
--   Once the send button is clicked a modal popup will display confirming the message has been sent. Clicking the "Thank You!" button will return the user to the Contact Us         page.
-
-<h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/contact_us_sent_screenshot.png?raw=true"></h2>
-
-### Potential features to use in the future
-
-#### Live stream 1 to 1 lessons
--   Adding the ability for users to all login for a confirmed time to do Pilates on a live stream with Bruna
-    from the comfort of their own homes, therefore maintaining social distancing and saving on travel costs and time.
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Log%20In%20.png"></h2>
 
 ## Wireframes
 
--   Home Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/index.html-wireframe.png)
+-   Register Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Register_Login_Signup_Logout.png)
 
--   Physio Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/fisio.html-wireframe.png)
+-   Log In Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Register_Login_Signup_Logout.png)
 
--   Appointment Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/appointments.html-wireframe.png) 
+-   Home Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Home%20Page.png)
 
--   Members Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/member.html-wireframe.png)
+-   Home Page Collapsible Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Home%20Page%20-%20Collapsable.png)
 
--   Bruna Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/bruna.html-wireframe.png)
+-   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/User%20Page.png) 
 
--   Contact Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/contact.html.png)
+-   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Add%20Book%20Page.png)
+
+-   Manager Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Manage%20Football%20Genre%20Page.png)
 
 ## Mobile Wireframes
 
--   Home Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/index.html-wireframe-mob.png)
+-   Register Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Register.png)
 
--   Physio Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/fisio.html-wireframe-mob.png)
+-   Log In Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Log%20In%20.png)
 
--   Appointment Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/appointments.html-wireframe-mob.png) 
+-   Home Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Home%20Page.png)
 
--   Members Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/member.html-wireframe-mob.png)
+-   Home Page Collapsible Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Home%20Page%20-%20Collapsible.png)
 
--   Bruna Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/bruna.html-wireframe-mob.png)
+-   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/User_Admin%20Page.png) 
 
--   Contact Page Wireframe - [view](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes/contact.html-wireframe-mob.png) 
+-   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png)
+
+-   Manager Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png)
 
 
 ## Google Maps API
