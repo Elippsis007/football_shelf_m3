@@ -75,9 +75,9 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png?raw=true"></h2>
 
-   #### Admin Manage Football Genres page:
--   A page for the admin of the website to manage football genres. The admin has the ability to edit current genres and even remove genres.
-    
+   #### Admin Features:
+-   Only the Admin can edit/delete all books and genres on the site, otherwise the content must belong to the session user in order for it to be edited or deleted.
+
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png?raw=true"></h2>
     
    #### Register / Log In / Log Out page:
@@ -104,7 +104,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
 -   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Add%20Book%20Page.png)
 
--   Manager Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Manage%20Football%20Genre%20Page.png)
+-   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Manage%20Football%20Genre%20Page.png)
 
 ## Mobile Wireframes
 
@@ -120,32 +120,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
 -   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png)
 
--   Manager Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png)
-
-
-## Google Maps API
-
-### What is the Google Maps Platform?
-The Google Maps Platform is a set of APIs and SDKs that allows developers to embed Google Maps into mobile apps and web pages, or to retrieve data from Google Maps.
-
-The Maps API returns helpful data about places and locations. It is called by javascript.
-It does two major things:
--   It can cause maps to appear for the user.
--   It can return data about a latitude/longitude location, or return data about an address.
-
-Google's documentation is strong for this API, so this guide will mostly link to the official documentation, and discuss how Refuge uses the different API features.
-
-### For a general introduction, see:
-
--   https://developers.google.com/maps/documentation/javascript/ and
--   https://developers.google.com/maps/documentation/javascript/tutorial
-
-### Why do we use Google Maps? (What is is good for?)
-As an app that locates restrooms, we need a way to handle both addresses (e.g. 1 Embarcadero Center, San Francisco, CA) and physical locations (latitude + longitude). Otherwise we wouldn't be able to keep track of our restrooms properly, and the app wouldn't work. Google Maps does what we need, and it was the first thing Refuge was developed with.
-
-It also lets us request an address from Google (we give them a physical location (latitude and longitude), they turn it into an address); We can do the reverse, by giving Google an address, and requesting a physical location (latitude and longitude). Try searching from the homepage to see this in action.
-
-We can also get information about businesses, landmarks, restaurants, etc. from the Google Maps "Places" library. This info includes when they open/close each day, for example.
+-   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png)
 
 ## Technologies Used
 
