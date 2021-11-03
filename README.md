@@ -16,84 +16,51 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
     -   #### First Time Visitor Goals
 
-        -   As a first-time user, I wanted first impressions to be appealing, the idea being that it won't intimidate the user with an overload of content.
-        -   As a first-time user, I want the user to be able to easily navigate throughout the site to find content and services the user is looking for.
-        -   As a first-time user, I wanted to make the content easily accessible on the pages rather than having them leave and find content on another page outside of the                   website.
-        -   As a first-time user, I want the user to be able to understand the experience of Bruna Fernandes, her professional background and qualifications
-        -   As a first-time user, I want the user to be able to book an appointment with a few clicks and a form submission.
-        -   As a first-time user, I want the user to be able to submit a contact form for any issues outside of making an appointment.
-
+        -   As a first-time user I want to know the main purpose of the site immediately upon arriving on the site.
+        -   As a first-time user, I want first time impressions to be appealing, the idea being that it won't intimidate the user with an overload of content.
+        -   As a first-time user I want the site UX to be intuitive for ease of use. I want the user to be able to easily navigate throughout the site to find content and services the user is looking for.
+        
     -   #### Returning Visitor Goals
 
-        -   As a returning user, I want to find information about physiotherapy and services offered by Bruna Fernandes.
-        -   As a returning user, I want to find the best way to get in contact with the website for any questions the user may have.
-        -   As a returning user, I want to be able to book appointments for current and future appointments.
-        -   As a returning user, I want the user to be able to sign-up for Membership where they can access Do it yourself videos at home and access in-depth                             information on types of services and methods that they can receive at discount prices.
-
-    -   #### Frequent User Goals
-    
-        -   As a frequent user, I want to check to see if there are any updated videos on the members page for fitness and strength purposes.
-        -   As a frequent user, I want to check to see if there are updated physiotherapy methods and information in the members page.
-        -   As a frequent user, I want to be able to contact the owner on queries through a contact page.
-        -   As a frequent user, I want to be able to book appointments when I feel the need.
-        -   As a frequent user, I want to be able to check further membership discounts on services in the clinic or at-home.
-
+        -   As a returning user, I want to be able to register with the site and create my own profile which I can log in to at any time.
+        -   As a returning user, I want to be able to add football books of my own to the site.
+        -   As a returning user, I want to be able to edit/delete any book contributions I have made to the site.
+        -   As a user I want the site to be responsive to all devices.
+        
 -   ### Design
 
     -   #### Structure
     
-        -   The structure of the website was purposely designed to maintain a fluid, consistent display throughout as to not look cluttered, easy to navigate and easy to find                 what you are looking for.
+        -   The structure of the website was purposely designed to maintain a fluid, consistent display throughout as to not look cluttered, easy to navigate and easy to find what you are looking for.
         
-    -   #### Pages: All pages contained the following elements.
-        -   Header/Footer: Defining clean and simple navigation to what the user is looking for.
-
-        <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/navbar_screenshot.png?raw=true"></h2>
-        <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/footer_screenshot.png?raw=true"></h2>       
-        
-        -   Website Brand Logo: On all pages the Brand logo sits on the Navbar and is a clickable link to redirect to the homepage.
-        <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/logo_screenshot.png?raw=true"></h2>
         -   Website Colors and Font: Website colors and font remain consistent throughout.
     
     -   #### Colour Scheme
     
-        -   The color scheme on my website was based off the business card from Bruna's private practice where I wanted to keep it consistent throughout and where it was                 clean and simple and appealing to look at. I used a "mint green" trim color with a dark blue background across all pages for consistency. The member's page was                   colored in gold representing the status of members, VIP, etc.
+        -   The color scheme I was aiming for on my website is simple, easy on the eye and appealing. I kept the colors simple and I feel that the contrast works. 
         
-       <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/colors/palette_colors.png?raw=true"></h2>
+       <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/color_pallette.png"></h2>
             
     -   #### Typography
     
         -   [Bree Serif](https://fonts.google.com/specimen/Bree+Serif?query=bree) is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems. Bree Serif is a professional looking font, it has characteristics that speak                 "professional", I like the shape and the style of the font, and I feel it represents the professionalism I am looking to create.
         
-    -   #### Imagery
-   
-        -   Imagery in this website is clear and intuitive for learning purposes
-   
 ## Features
 
    ### Existing Features
    
    #### The Header includes:
--   Website Logo: Brand awareness across all pages of the website.
 -   Navigation Bar: Allows users to navigate the site easily.
     
-   #### The Footer includes: 
--   Social Media Links: Links to Facebook, Twitter, Instagram and YouTube.
-    The Header and Footer are consistent across all of the web pages on the website, only the color changing slightly on the membership page.
-   
-   #### The Home page includes:
--   Logo Banner: Easy on the eye colors from customer business card. It's large enough and unmissable, reinforcing brand awareness to users.
-
-    <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/logo_banner_screenshot.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Header.png"></h2>
     
--   Three cards on display the top two cards are: Member and Appointment information. Icons on each card are clickable links to take the user to the page requested.
-    The bottom card is a testimonial card on a carousel that automatically transitions from one slide to another displaying comments and feedback star ratings.
-    The indicators on the bottom are clickable, allowing the user to navigate through each slide when they want.
-
-   ##### Home page Modals:
--  Clicking on the Members icon will display a pop-up modal asking the user to enter their login details.
--  The Sign In / Sign Up button on the right side of the navigation bar, once clicked will pop-up another modal for users to register for the website.
+   #### The Home page includes:
+-   A search where users can search for keywords that appear in the Football Library.
+    
+   ##### Home page collapsible:
+-  Clicking on the collapsible displays books in an accordion style.
    
-    <h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/website_screens/sign_log_modal_screenshot.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Home%20Page%20-%20Collapsible.png?raw=true"></h2>
 
 #### The  Physiotherapy & Pilates page includes:
 -   A quick to read page of the services that Bruna Fernandes Physiotherapy is offering to all clients.
