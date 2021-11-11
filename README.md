@@ -122,6 +122,10 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
 -   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png)
 
+## Database Scheme
+
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/database-graph.png?raw=true"></h2>
+
 ## Technologies Used
 
 ### Languages Used
