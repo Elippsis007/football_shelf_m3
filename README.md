@@ -141,6 +141,10 @@ This is The Football Shelf a simple project, a website designed to be responsive
      - MongoDB Atlas was used as the database for the creation of this project.
 1.  [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
      - Jinja was used for templating.
+1.  [Freeformatter-Css beautifier:](https://www.freeformatter.com/css-beautifier.html)
+     - This was used to format the CSS stylesheet.
+1.  [Freeformatter-Css beautifier:](https://www.freeformatter.com/css-beautifier.html)
+     - This was used as a general reference resource.
 1.  [Font Awesome:](https://fontawesome.com/)
      - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1.  [Materializecss:](https://materializecss.com/)
