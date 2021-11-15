@@ -1,18 +1,12 @@
 ## Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
+### Validators
+
+## HTML
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/tree/master/assets/w3validator)
     
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/glutonia_m1/tree/master/assets/w3_validator/w3c_css)
-
-### Testing User Stories from User Experience (UX) Section
-
--   #### First Time Visitor Goals
-
-### Google Lighthouse Audit
-I used Google's lighthouse audit to test the website capability positively with Google's performance measurements.
-
-<h2 align="center"><img src="https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/lighthouse/lighthouse-PWA.png?raw=true"></h2>
 
 ### Testing User Stories from User Experience (UX) Section
 
