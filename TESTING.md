@@ -1,15 +1,6 @@
 ## Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-### Validators
-
-## HTML
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/html_validation)
-    
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/css-validation)
-
-### Testing User Stories from User Experience (UX) Section
-
 -   #### First Time Visitor Goals
 
     1. As a user, I want the Home page to be attractive, simple with a little vibrance from the colors. When the user enters for the first time they are not exposed to clutter and confusion.
@@ -91,6 +82,18 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -  The website has also been tested on <a href="https://responsivedesignchecker.com/">ResponsiveDesignChecker</a> successfully.
 -  A large amount of testing was done to ensure that all pages were linking correctly and responsive to all devices.
 -  Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+
+### Validators
+
+## HTML
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/html_validation)
+
+## CSS
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/css-validation)
+
+### Testing User Stories from User Experience (UX) Section
+
 
 -   ### Known Bugs and how I have overcome them
 
