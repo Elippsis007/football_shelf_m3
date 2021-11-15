@@ -126,34 +126,17 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
 <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/database-graph.png?raw=true"></h2>
 
+## Sitemap
+-   The sitemap was created using [Octopus](https://octopus.do/)
+-   The sitemap can be found [here](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Sitemap.png?raw=true)
+
 ## Technologies Used
-
-### Languages Used
-
--   [HTML5](https://en.wikipedia.org/wiki/HTML5)
--   [CSS](https://en.wikipedia.org/wiki/CSS)
--   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries & Programs Used
 
-1.  [Bootstrap V4:](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
-     - Bootstrap was used to assist with the responsiveness and styling of the website working from mobile first to larger screen sizes.
-1.  [Hover.css:](https://ianlunn.github.io/Hover/)
-     - Hover.css was used on the social media icons and some buttons to add a color change/transition once the mouse was "hovered" over the icon or button.
-1.  [Google Fonts:](https://fonts.google.com/)
-     - Google fonts were used to import the Bree Serif' font into the style.css file which is used on all pages throughout the project.
-1.  [Google Maps API:](https://developers.google.com/maps)
-     - Google Maps API was used to import the Google Maps and functionality with map markers on the contact.html page.
+
 1.  [Font Awesome:](https://fontawesome.com/)
      - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-1.  [JavaScript:](https://en.wikipedia.org/wiki/JavaScript)
-     - JavaScript was used on this website for a functioning calendar with the option to select a date.
-     - JavaScript was used with Email.js for the fully functional Contact Us form.
-     - JavaScript was used to greet members on the members.html page. Depending on the time of the day the message would greet with morning, afternoon and evening.
-     - JavaScript was used on the members.html page when a user clicks a button on each image a paragraph will collapse under the image with information on each service.
-     - JavaScript was used with Google Maps to display on the contact.html page.
-1.  [jQuery:](https://jquery.com/)
-     - For the components of Bootstrap to work it requires jQuery and Popper.js through JS.
 1.  [Git](https://git-scm.com/)
      - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1.  [GitHub:](https://github.com/)
