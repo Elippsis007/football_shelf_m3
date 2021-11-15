@@ -1,51 +1,47 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <div class="card">
-        <h3 class="center-align">Register</h3>
-    </div>
-
-    <div class="row">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-            <div class="card-panel white darken-4">
-                <!-- Username -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-futbol prefix black-text"></i>
-                        <input id="username" name="username" type="text" minlength="5" maxlength="20"
-                            pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
-                        <label for="username">Username</label>
-                    </div>
-                </div>
-                <!-- Password -->
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="fas fa-user-shield prefix black-text"></i>
-                        <input id="password" name="password" type="password" minlength="5" maxlength="15"
-                            class="validate" required>
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <!-- Register -->
-                <div class="row">
-                    <div class="register-btn center">
-                        <button type="submit" class="btn-floating btn-large waves-effect waves-light amber darken-4"><i
-                                class="fas fa-user-plus" style="color: black;"></i></button>
-                    </div>
-                </div>
+<div class="card">
+   <h3 class="center-align">Register</h3>
+</div>
+<div class="row">
+   <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+      <div class="card-panel white darken-4">
+         <!-- Username -->
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="fas fa-futbol prefix black-text"></i>
+               <input id="username" name="username" type="text" minlength="5" maxlength="20"
+                  pattern="^[a-zA-Z0-9]{5,20}$" class="validate" required>
+               <label for="username">Username</label>
             </div>
-        </form>
-    </div>
-
-    <div class="row">
-        <div class="col s12">
-            <div class="card">
-                <p class="center-align">
-                    Already Registered?
-                    <a href="{{ url_for('login') }}" class="amber-text text-darken-4">Log In</a>
-                </p>
+         </div>
+         <!-- Password -->
+         <div class="row">
+            <div class="input-field col s12">
+               <i class="fas fa-user-shield prefix black-text"></i>
+               <input id="password" name="password" type="password" minlength="5" maxlength="15"
+                  class="validate" required>
+               <label for="password">Password</label>
             </div>
-        </div>
-    </div>
-
+         </div>
+         <!-- Register -->
+         <div class="row">
+            <div class="register-btn center">
+               <button type="submit" class="btn-floating btn-large waves-effect waves-light amber darken-4"><i
+                  class="fas fa-user-plus" style="color: black;"></i></button>
+            </div>
+         </div>
+      </div>
+   </form>
+</div>
+<div class="row">
+   <div class="col s12">
+      <div class="card">
+         <p class="center-align">
+            Already Registered?
+            <a href="{{ url_for('login') }}" class="amber-text text-darken-4">Log In</a>
+         </p>
+      </div>
+   </div>
+</div>
 {% endblock %}
