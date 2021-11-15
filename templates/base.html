@@ -45,7 +45,6 @@
                   <li>
                      <h4 class="center-align text-shadow amber-text text-darken-4">The Football Shelf</h4>
                   </li>
-                  <hr>
                   {% if session.user %}
                   <li><a href="{{ url_for('get_books') }}" class="center-align">Home</a></li>
                   <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">User Page</a></li>
