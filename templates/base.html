@@ -39,26 +39,27 @@
             </div>
          </nav>
          <!-- Mobile sidenav -->
-         <ul class="sidenav" id="mobile-demo">
-            <div class="card">
-               <li>
-                  <h4 class="center-align text-shadow amber-text text-darken-4">The Football Shelf</h4>
-               </li>
-               <hr>
-               {% if session.user %}
-               <li><a href="{{ url_for('get_books') }}" class="center-align">Home</a></li>
-               <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">User Page</a></li>
-               <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
-               {% if session.user|lower == "admin"|lower %}
-               <li><a href="{{ url_for('library_genre') }}" class="center-align">Manage Football Genres</a></li>
-               {% endif %}
-               <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
-               {% else %}
-               <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
-               <li><a href="{{ url_for('register') }}" class="center-align">Register</a></li>
-               {% endif %}
-            </div>
-         </ul>
+         
+         <div class="card">
+            <ul class="sidenav" id="mobile-demo">
+                  <li>
+                     <h4 class="center-align text-shadow amber-text text-darken-4">The Football Shelf</h4>
+                  </li>
+                  <hr>
+                  {% if session.user %}
+                  <li><a href="{{ url_for('get_books') }}" class="center-align">Home</a></li>
+                  <li><a href="{{ url_for('profile', username=session['user']) }}" class="center-align">User Page</a></li>
+                  <li><a href="{{ url_for('add_book') }}" class="center-align">Add Book</a></li>
+                  {% if session.user|lower == "admin"|lower %}
+                  <li><a href="{{ url_for('library_genre') }}" class="center-align">Manage Football Genres</a></li>
+                  {% endif %}
+                  <li><a href="{{ url_for('logout') }}" class="center-align">Log Out</a></li>
+                  {% else %}
+                  <li><a href="{{ url_for('login') }}" class="center-align">Log In</a></li>
+                  <li><a href="{{ url_for('register') }}" class="center-align">Register</a></li>
+                  {% endif %}
+            </ul>
+         </div>
       </header>
       <section>
          <!-- Flash messages -->
