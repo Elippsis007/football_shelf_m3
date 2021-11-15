@@ -6,7 +6,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ## HTML
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/html_validation)
     
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/glutonia_m1/tree/master/assets/w3_validator/w3c_css)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/css-validation)
 
 ### Testing User Stories from User Experience (UX) Section
 
