@@ -1,82 +1,84 @@
 body {
-  background-image: url("/static/images/soccer_pitch.jpg");
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+	background-image: url("/static/images/soccer_pitch.jpg");
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 main {
-  flex: 1 0 auto;
+	flex: 1 0 auto;
 }
 
 h3 {
-  line-height: 150%;
-  background-color: white;
-  color: #ff6f00;
-  font-size: 2.92rem;
-  margin: 1.9466666667rem 0 1.168rem 0;
+	line-height: 150%;
+	background-color: white;
+	color: #ff6f00;
+	font-size: 2.92rem;
+	margin: 1.9466666667rem 0 1.168rem 0;
 }
 
 #h3-profile {
-  background-color: #ff6f00;
-  font-size: 2.92rem;
-  line-height: 200%;
-  margin: 1.9466666667rem 0 1.168rem 0;
+	background-color: #ff6f00;
+	font-size: 2.92rem;
+	line-height: 200%;
+	margin: 1.9466666667rem 0 1.168rem 0;
 }
 
 nav .brand-logo {
-  position: absolute;
-  color: #fff;
-  display: inline-block;
-  font-size: 2.1rem;
-  padding-left: 5px;
+	position: absolute;
+	color: #fff;
+	display: inline-block;
+	font-size: 2.1rem;
+	padding-left: 5px;
 }
 
 .collapsible-body {
-  display: none;
-  border-bottom: 1px solid #ddd;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 2rem;
-  background: white;
+	display: none;
+	border-bottom: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 2rem;
+	background: white;
 }
 
 .bold_p {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .text-shadow {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-  /* Flashed Messages */
+
+/* Flashed Messages */
+
 .flashes h4 {
-  line-height: 3;
+	line-height: 3;
 }
 
 .btn-floating.btn-small i {
-  line-height: 32.4px;
-  font-size: larger;
+	line-height: 32.4px;
+	font-size: larger;
 }
 
 .btn-small {
-  margin: 5px;
+	margin: 5px;
 }
 
 .collapsible-header {
-  margin-left: 10px;
-  line-height: 42px;
+	margin-left: 10px;
+	line-height: 42px;
 }
 
 .fa-check-circle {
-  margin-left: 5px;
-  line-height: 42px;
+	margin-left: 5px;
+	line-height: 42px;
 }
 
 .profile_p {
-  color: white;
+	color: white;
 }
 
 .sidenav {
-  background-image: url("/static/images/soccer-football-background.jpg"); 
+	background-image: url("/static/images/soccer-football-background.jpg");
 }
