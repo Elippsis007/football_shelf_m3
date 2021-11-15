@@ -1,35 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <div class="card">
-        <h3 class="amber-text text-darken-4 center-align">Manage Football Genres</h3>
-    </div>
-
-    <div class="row">
-        <div class="col s12 center-align">
-            <a href="{{ url_for('add_genre') }}" class="btn-large amber darken-4 text-shadow">
-                Add Genre <i class="fas fa-plus-square right"></i>
-            </a>
-        </div>
-    </div>
-
-    <div class="row">
-        {% for genre in library_genre %}
-        <div class="col s12 m3">
-            <div class="card amber darken-4 center-align">
-                <div class="card-content white-text">
-                    <span class="card-title">{{ genre.football_genre }}</span>
-                </div>
-                <div class="card-action">
-                    <a href="{{ url_for('edit_genre', genre_id=genre._id) }}"
-                        class="btn-large amber darken-4 text-shadow"><i class="fas fa-edit"></i></a>
-                    <a href="{{ url_for('delete_genre', genre_id=genre._id) }}"
-                        class="btn-large amber darken-4 text-shadow"><i class="fas fa-trash"></i></a>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-
-
+<div class="card">
+   <h3 class="amber-text text-darken-4 center-align">Manage Football Genres</h3>
+</div>
+<div class="row">
+   <div class="col s12 center-align">
+      <a href="{{ url_for('add_genre') }}" class="btn-large amber darken-4 text-shadow">
+      Add Genre <i class="fas fa-plus-square right"></i>
+      </a>
+   </div>
+</div>
+<div class="row">
+   {% for genre in library_genre %}
+   <div class="col s12 m3">
+      <div class="card amber darken-4 center-align">
+         <div class="card-content white-text">
+            <span class="card-title">{{ genre.football_genre }}</span>
+         </div>
+         <div class="card-action">
+            <a href="{{ url_for('edit_genre', genre_id=genre._id) }}"
+               class="btn-large amber darken-4 text-shadow"><i class="fas fa-edit"></i></a>
+            <a href="{{ url_for('delete_genre', genre_id=genre._id) }}"
+               class="btn-large amber darken-4 text-shadow"><i class="fas fa-trash"></i></a>
+         </div>
+      </div>
+   </div>
+   {% endfor %}
+</div>
 {% endblock %}
