@@ -167,6 +167,9 @@ This is The Football Shelf a simple project, a website designed to be responsive
 1.  [Responsive Design Checker:](http://ami.responsivedesign.is/#)
      - Used to check website response across device types.
 
+### Testing
+Testing information can be found here in the separate [TESTING.md](https://github.com/Elippsis007/football_shelf_m3/blob/main/TESTING.md)
+
 ## Deployment
 
 ### GitHub Pages
