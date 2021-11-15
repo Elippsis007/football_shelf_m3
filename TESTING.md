@@ -4,7 +4,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Validators
 
 ## HTML
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/tree/master/assets/w3validator)
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/html_validation)
     
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/glutonia_m1/tree/master/assets/w3_validator/w3c_css)
 
