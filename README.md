@@ -133,16 +133,25 @@ This is The Football Shelf a simple project, a website designed to be responsive
 ## Technologies Used
 
 ### Frameworks, Libraries & Programs Used
-
-
+1.  [Flask:](https://flask.palletsprojects.com/en/2.0.x/)
+     - Flask was used as the main python framework in the building of this project.
+1.  [Heroku:](https://www.heroku.com/)
+     - Heroku was used as a cloud based platform to deploy this site.
+1.  [MongoDB:](https://www.mongodb.com/)
+     - MongoDB Atlas was used as the database for the creation of this project.
+1.  [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
+     - Jinja was used for templating.
 1.  [Font Awesome:](https://fontawesome.com/)
      - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1.  [Materializecss:](https://materializecss.com/)
+     - Various aspects of this website were structured using Materialize.
+     - Materialize was used to make this website responsive.
+1.  [Balsamiq:](https://balsamiq.com/)
+     - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes) during the design process.
 1.  [Git](https://git-scm.com/)
      - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1.  [GitHub:](https://github.com/)
      - GitHub is used to store the project's  code after being pushed from Git.
-1.  [Balsamiq:](https://balsamiq.com/)
-     - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes) during the design process.
 1.  [Responsive Design Checker:](http://ami.responsivedesign.is/#)
      - Used to check website response across device types.
 
