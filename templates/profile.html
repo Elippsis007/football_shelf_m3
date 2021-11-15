@@ -1,26 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
-
-    
-    <div class="row">
-        <div class="col s12 m8 offset-m2">
-            <div class="card-panel amber darken-4">
-                <h3 id="h3-profile" class="center-align white-text text-darken-4">
-                    Welcome back {{ username.title() }}!
-                </h3>
-                <hr>
-                <br>
-                <p class="profile_p center-align">Be sure to add more books to our online football library by clicking
-                    on the book icon below
-                    <p class="center-align"><a href="{{ url_for('add_book') }}"> <i
-                                class="fas fa-book-medical white-text fa-3x"></i></a></p>
-                    <p class="profile_p center-align">Every football book contribution is appreciated by the community!
-                    </p>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    
-
+<div class="row">
+   <div class="col s12 m8 offset-m2">
+      <div class="card-panel amber darken-4">
+         <h3 id="h3-profile" class="center-align white-text text-darken-4">
+            Welcome back {{ username.title() }}!
+         </h3>
+         <hr>
+         <br>
+         <p class="profile_p center-align">Be sure to add more books to our online football library by clicking
+            on the book icon below
+         <p class="center-align"><a href="{{ url_for('add_book') }}"> <i
+            class="fas fa-book-medical white-text fa-3x"></i></a></p>
+         <p class="profile_p center-align">Every football book contribution is appreciated by the community!
+         </p>
+      </div>
+   </div>
+</div>
+</div>
 {% endblock %}
