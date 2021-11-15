@@ -152,6 +152,8 @@ This is The Football Shelf a simple project, a website designed to be responsive
      - Materialize was used to make this website responsive.
 1.  [Balsamiq:](https://balsamiq.com/)
      - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes) during the design process.
+1.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
+     - Google Dev Tools was used throughout the project for various styling and testing purposes.
 1.  [Git](https://git-scm.com/)
      - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1.  [GitHub:](https://github.com/)
