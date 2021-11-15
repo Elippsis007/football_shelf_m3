@@ -1,35 +1,30 @@
 {% extends "base.html" %}
 {% block content %}
-
-    <div class="card">
-        <h3 class="amber-text text-darken-4 center-align">Edit Genre</h3>
-    </div>
-
-    <!-- Genre Name -->
-    <div class="row card-panel">
-        <form class="col s12" method="POST" action="{{ url_for('edit_genre', genre_id=genre._id) }}">
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-book prefix amber-text text-darken-1"></i>
-                    <input id="football_genre" name="football_genre" type="text" maxlength="70"
-                        value="{{ genre.football_genre }}" class="validate" required>
-                    <label for="football_genre">Genre Name</label>
-                </div>
-            </div>
-
-            <!-- Edit Genre Button -->
-            <div class="row">
-                <div class="col s12 center-align">
-                    <a href="{{ url_for('library_genre') }}" class="btn-large red text-shadow">
-                        Cancel <i class="fas fa-times-circle right"></i>
-                    </a>
-                    <button type="submit" class="btn-large amber darken-4 text-shadow">
-                        Edit Genre<i class="fas fa-edit right"></i>
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
-
-
+<div class="card">
+   <h3 class="amber-text text-darken-4 center-align">Edit Genre</h3>
+</div>
+<!-- Genre Name -->
+<div class="row card-panel">
+   <form class="col s12" method="POST" action="{{ url_for('edit_genre', genre_id=genre._id) }}">
+      <div class="row">
+         <div class="input-field col s12">
+            <i class="fas fa-book prefix amber-text text-darken-1"></i>
+            <input id="football_genre" name="football_genre" type="text" maxlength="70"
+               value="{{ genre.football_genre }}" class="validate" required>
+            <label for="football_genre">Genre Name</label>
+         </div>
+      </div>
+      <!-- Edit Genre Button -->
+      <div class="row">
+         <div class="col s12 center-align">
+            <a href="{{ url_for('library_genre') }}" class="btn-large red text-shadow">
+            Cancel <i class="fas fa-times-circle right"></i>
+            </a>
+            <button type="submit" class="btn-large amber darken-4 text-shadow">
+            Edit Genre<i class="fas fa-edit right"></i>
+            </button>
+         </div>
+      </div>
+   </form>
+</div>
 {% endblock %}
