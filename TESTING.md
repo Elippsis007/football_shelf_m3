@@ -23,47 +23,26 @@
         1. On the Home page the user can explore the library of football books and the reviews written by contributers.
         2. The option to register for an account.
         3. The option after registering for an account to contribute to the library.
+        4. To read book reviews by contributors
+        5. To leave a personal book review.
         
-    5. As a user, I want to know about Bruna Fernandes, who is she?
-    
-        1. The user can access the about link where a dropdown will direct you to a page about Bruna.
-        2. This page shows the user who she is with a professional image of Bruna with title.  
-        3. There is an about Bruna section which dives a little deeper into who she is as a professional and health background.
-        4. The qualifications section is assurance for the user that she is qualified and not only in one Degree but many more!
-        5. Toward the bottom of the page are the social medial links.
-
-    7. As a user, I want to be able to contact Bruna for comments, feedback or ideas.
-    
-        1. The user can access the Contact page where they can submit their messages, comments and feedback.
-        2. There is a fully functional form with inputs for your Name, Email and a message box for your comments.
-        3. The user receives a popup when the message has successfully been sent and a message to tell the user when a message has NOT been sent.
-        4. There is also a section for a user who may have missed the appointment section a link to go to appointments for the user convenience.
-        5. The final section is an address and contact number followed by Google maps with a pin to locate Bruna Fernandes office.
-        6. Toward the bottom of the page are the social medial links. 
-
-
 -   #### Returning User Goals
 
-    1. As a returning user, I want to return to read up on services on offer with Bruna Fernandes.
+    1. As a returning user, I want to return to discover old or new football books, that I was unaware of.
 
-        1. The navigation bar clearly highlights the "Services" tab.
-        2. Here the user can access the services content and read up on what is available to book appointments for or just to learn about these services.   
+        1. The football library has a collapsible list of books titles that can be scrolled through by a simple click of a mouse button.
+        2. Here the user can also search for a book title that may have been added into the database by a current member.   
         
-    2. As a returning user, I want to book appointments for the future should there be any injury concerns.
+    2. As a returning user, I want to add football books that I have either read or simply want to add to the community library.
     
-        1. The appointment section grants the user the function to book appointments very easily by filling out a simple form of personal details and then a calendar to select a date for the appointment and with a click of send button the appointment will be sent.
-        2. If, however there is a technical issue when sending the message the user will be greeted with a popup explaining to them to try again later and if the problem persists to contact Bruna Fernandes on the number inside the popup window.
-
-    3. As a returning user, I want to have the function of contacting Bruna Fernandes with any issues, comments or feedback I wish to express.
-    
-        1. The Contact Us page can be found by clicking on the About link on the nav bar. From here the user can choose the Contact page.
-        2. On the Contact page the user can fill out the form and type in their query, concerns and comments.
+        1. After registration, a user can add a book from their profile page or by navigating to the "Add Book" link.
+        2. The user also has the option to remove and edit their book contributions.
         
 -   #### Frequent User Goals
 
-    1. As a frequent user, I want to visit the Member page to see if there are any newly added content.
+    1. As a frequent user, I want to visit the library page to see what newly added football contributions there are.
         
-        1. The Member page would have some updated content, updated videos, new videos and the removal of older videos.
+        1. The home page would have some new books.
 
 
 -   ### Further Testing
