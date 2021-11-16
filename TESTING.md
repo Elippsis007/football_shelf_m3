@@ -1,39 +1,30 @@
 ## Testing
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 -   #### First Time Visitor Goals
 
-    1. As a user, I want the Home page to be attractive, simple with a little vibrance from the colors. When the user enters for the first time they are not exposed to clutter and confusion.
+    1. As a user, I want the Home page to be simple and easy to understand what the purpose is of the website. When the user enters for the first time they are not exposed to an overload of content.
     
-        1. When the user is exploring the website, they will see the Bruna Fernandes logo on ALL pages on the navbar and sometimes a banner toward the top of the page centered.
-        2. The website uses cool, and slightly illuminated colors to give a fresh vibrancy feel to the pages. The Member's page was altered to a gold color, for that VIP status feeling, highlighting the best of the best for loyal clients.
+        1. When the user is exploring the website, they will see simple navbar with website name and links to different pages on the website.
+        2. The website uses calm, and slightly bright colors.
             
-    2. As a user, I want to be able to easily navigate throughout the site to find information and services they are looking for.
+    2. As a user, I want to be able to easily navigate throughout the site to find functions they are looking for.
         
-        1. The site has been designed to be fluid and never to entrap or confuse the user. At the top of each page there is a clean navigation bar, each link tells the user which the page they be redirected to and some of the links have a drop-down with further options to choose from.
-        2. Toward the bottom of all the pages there are social links that will redirect you to the various social media platforms opening a new tab for each link. 
-        
-    3. As a user, I want the user to be able to explore services on offer and the ability to contact Bruna Fernandes and learn about her experience.
+        1. At the top of each page there is a clean navigation bar, each link tells the user which the page they be redirected to.
+        2. In mobile phone view there is a drop-down with further links to choose from.
+                
+    3. As a user, I want the user to be able to explore a library of football books and the ability to contribute to the library upon creating an account.
    
-        1. On the Home page the user can sign-up/login to the member section, where they are greeted with a popup to input email and password. Once the users have filled in the form and clicked the login button the user will be greeted with the Member page.
-        2. On the Home page the user can go straight to Appointments.
-        3. The user can also view testimonials from current or past clients where short reviews and ratings are submitted.
-        4. Toward the bottom of the page are the social medial links.
-
-    4. As a user, I want to know what type of services are available to me.
+        1. On the Home page the user can Login or Register to the member section. 
+        2. On the Home page the user can explore the library of football books and the reviews written by contributers.
+        3. The user can also search for football books that contributers have posted.
+      
+    4. As a user, I want to know what type of functions are available to me.
     
-        1. On the services link the user can go straight to Physiotherapy and Pilates page, where they can learn a little about what is on offer to new or existing clients.
-        2. Three sections to this page are Physiotherapy, Pilates and the unique service of Home visits.
-        3. Toward the bottom of the page are the social medial links.
+        1. On the Home page the user can explore the library of football books and the reviews written by contributers.
+        2. The option to register for an account.
+        3. The option after registering for an account to contribute to the library.
         
-    5. As a user, I want to know what type of services are available to me.
-
-        1. On the services link the user can go straight to Appointments, where they can fill out a simple form and submit for booking.
-        2. They must download a C19 form too and return to Bruna Fernandes. 
-        3. There is also the Service Hours information, so the user knows the operating hours.
-        4. Toward the bottom of the page are the social medial links.
-    
-    6. As a user, I want to know about Bruna Fernandes, who is she?
+    5. As a user, I want to know about Bruna Fernandes, who is she?
     
         1. The user can access the about link where a dropdown will direct you to a page about Bruna.
         2. This page shows the user who she is with a professional image of Bruna with title.  
