@@ -71,4 +71,4 @@
 
 -   ### Issues still to fix
 
--  The sign-up/login functions are only aesthetic, there is no database to store user details yet.
+-  *****Add content*****
