@@ -44,7 +44,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
             
     -   #### Typography
     
-        -   [Bree Serif](https://fonts.google.com/specimen/Bree+Serif?query=bree) is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems. Bree Serif is a professional looking font, it has characteristics that speak                 "professional", I like the shape and the style of the font, and I feel it represents the professionalism I am looking to create.
+        -   [Bree Serif](https://fonts.google.com/specimen/Bree+Serif?query=bree) is the main font used throughout the whole website with San-serif as the fallback font in                   case for any reason the font isn't being recognized on different operating systems.
         
 ## Features
 
