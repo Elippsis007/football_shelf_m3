@@ -8,7 +8,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
 ## Deployed Site
 [View the live project here.](https://flask-football-shelf.herokuapp.com/)
 
-<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Responsive_image/Responsive_Design.png"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/responsive_image/responsive_design.png"></h2>
 
 ## User Experience (UX)
 
@@ -53,33 +53,33 @@ This is The Football Shelf a simple project, a website designed to be responsive
    #### The Header includes:
 -   Navigation Bar: Allows users to navigate the site easily.
     
-    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Header.png"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/header.png"></h2>
     
    #### The Home page includes:
 -   A Search Bar: where users can search for keywords that appear in the Football Library.
 
-    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Search_Bar.png"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/search_bar.png"></h2>
     
    ##### Home page collapsible:
 -  Clicking on the collapsible displays books in an accordion style.
    
-    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Home%20Page%20-%20Collapsible.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/home_page_collapsible.png"></h2>
 
 #### The User/Admin page includes:
 -   A welcome message just under the navbar.
 -   A simple card with an option to add a Football Book to the library.
 
-    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/User_Admin%20Page.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/user_admin_page.png"></h2>
    
    #### Add a book page includes:
 -   A form with multiple fields for the user to fill out. If a user wishes to add a book to the library then all fields are required to be filled out. At the end of the form there is a submit button, if a field is left blank it will prevent the user from submitting the book to the library database.
 
-    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/add_book_page.png"></h2>
 
    #### Admin Features:
 -   Only the Admin can edit/delete all genres on the site, otherwise the content must belong to the session user in order for it to be edited or deleted.
 
-    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png?raw=true"></h2>
+    <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/manage_genres.png"></h2>
     
    #### Register / Log In / Log Out page:
     
@@ -87,49 +87,45 @@ This is The Football Shelf a simple project, a website designed to be responsive
 -   The register page asks users to input a username and password they wish to use for accessing the site. Once these are provided and submitted they are then added to an external database.
 -   Log In page asks the users to input their credentials from registration to give access to their user page and other pages to the website.
 
-<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Register.png"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/register.png"></h2>
 
-<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Log%20In%20.png"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/log_in.png"></h2>
 
 ## Wireframes
 
--   Register Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Register_Login_Signup_Logout.png)
+-   Register Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/register_login_signup_logout.png)
 
--   Log In Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Register_Login_Signup_Logout.png)
+-   Log In Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/register_login_signup_logout.png)
 
--   Home Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Home%20Page.png)
+-   Home Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/home_page.png)
 
--   Home Page Collapsible Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Home%20Page%20-%20Collapsable.png)
+-   Home Page Collapsible Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/home_page_collapsable.png)
 
--   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/User%20Page.png) 
+-   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/user_page.png) 
 
--   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Add%20Book%20Page.png)
+-   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/add_book_page.png)
 
--   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Manage%20Football%20Genre%20Page.png)
+-   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/manage_football_genre_page.png)
 
 ## Mobile Wireframes
 
--   Register Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Register.png)
-
--   Log In Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Log%20In%20.png)
-
--   Home Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/Home%20Page.png)
+-   Register/Login Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/home_page_mobile.png)
 
 -   Home Page Collapsible Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Home%20Page%20-%20Collapsible.png)
 
--   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/User_Admin%20Page.png) 
+-   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/user_page_mobile.png) 
 
--   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png)
+-   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/add_book_page_mobile.png)
 
--   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png)
+-   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/manage_football_genre_mage-mobile.png)
 
 ## Database Scheme
 
-<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/Wireframes/database-graph.png?raw=true"></h2>
+<h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/database_graph.png"></h2>
 
 ## Sitemap
 -   The sitemap was created using [Octopus](https://octopus.do/)
--   The sitemap can be found [here](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Sitemap.png?raw=true)
+-   The sitemap can be found [here](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/sitemap.png)
 
 ## Technologies Used
 
@@ -154,7 +150,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
 1.  [CSS Tricks:](https://css-tricks.com/)
      - This was used as a general reference resource.
 1.  [Balsamiq:](https://balsamiq.com/)
-     - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/bruna_fernandes_phsiotherapy_m2/blob/master/assets/wireframes) during the design process.
+     - Balsamiq was used to create the [wireframes](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/wireframes) during the design process.
 1.  [Google DevTools:](https://developer.chrome.com/docs/devtools/)
      - Google Dev Tools was used throughout the project for various styling and testing purposes.
 1.  [Coolors:](https://coolors.co/)
