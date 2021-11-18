@@ -1,5 +1,15 @@
 ## Testing
 
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+### HTML
+-   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/html_validation)
+
+### CSS
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/css-validation)
+
+### Testing User Stories from User Experience (UX) Section
+
 -   #### First Time Visitor Goals
 
     1. As a user, I want the Home page to be simple and easy to understand what the purpose is of the website. When the user enters for the first time they are not exposed to an overload of content.
@@ -44,8 +54,7 @@
         
         1. The home page would have some new books.
 
-
--   ### Further Testing
+   ### Further Testing
 
 -  The Website was tested on Google Chrome.
 -  The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX using google DevTools.
@@ -53,22 +62,5 @@
 -  A large amount of testing was done to ensure that all pages were linking correctly and responsive to all devices.
 -  Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
-
-### Validators
-
-## HTML
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/html_validation)
-
-## CSS
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/Elippsis007/football_shelf_m3/tree/main/static/images/css-validation)
-
-### Testing User Stories from User Experience (UX) Section
-
-
--   ### Known Bugs and how I have overcome them
-
--   *****Add content*****
-
--   ### Issues still to fix
-
--  *****Add content*****
+   ### Issues still to fix
+-  Defensive programming for when a user wants to delete a book from their library they would be prompeted with a modal to ask if they are certain they want to delete this particular book. Unfortunately after attempts to implement a modal from Materialize this function wouldn't work, when I managed to get the modal to popup and I would hit the delete button, the book I wanted to delete wouldn't but the books below would delete which I certainly wasn't looking to do. I chose not to implement this feature yet until I am able to experiment more with it.
