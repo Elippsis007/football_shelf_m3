@@ -77,13 +77,13 @@ This is The Football Shelf a simple project, a website designed to be responsive
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Add%20Book%20Page.png?raw=true"></h2>
 
    #### Admin Features:
--   Only the Admin can edit/delete all books and genres on the site, otherwise the content must belong to the session user in order for it to be edited or deleted.
+-   Only the Admin can edit/delete all genres on the site, otherwise the content must belong to the session user in order for it to be edited or deleted.
 
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Manage%20Genres.png?raw=true"></h2>
     
    #### Register / Log In / Log Out page:
     
--   The register/log in/log out pages share the same layout and style, each have input fields for usernames and passwords. provide the same functionality.
+-   The register/log in/log out pages share the same layout and style, each have input fields for usernames and passwords and provide the same functionality.
 -   The register page asks users to input a username and password they wish to use for accessing the site. Once these are provided and submitted they are then added to an external database.
 -   Log In page asks the users to input their credentials from registration to give access to their user page and other pages to the website.
 
@@ -236,7 +236,7 @@ It is important to note that this project will not run locally unless an env.py 
     
 Once the project been loaded into the IDE it is necessary to install the necessary requirements which can be done by typing the following command.
 
--pip install -r requirements.txt
+-   -pip install -r requirements.txt
 
 ### How to Fork the respository.
     1. Log into GitHub.
