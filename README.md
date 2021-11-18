@@ -172,51 +172,75 @@ Testing information can be found here in the separate [TESTING.md](https://githu
 
 ## Deployment
 
-### GitHub Pages
+This project was developed using Gitpod IDE and pushed to Github using the in-built terminal. Github can only host static websites it was necessary to deploy this project to Heroku because it is a compatible hosting platform for a back-end focused websits like this one.
 
-The project was deployed to GitHub Pages using the following steps...
+This project was deployed using Heroku and stored in GitHub.
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://elippsis007.github.io/glutonia_m1/) in the "GitHub Pages" section.
+Before deploying the website to Heroku, the following three must be followed to allow the app to work in Heroku:
 
-### Forking the GitHub Repository
+1. Create requirements.txt file that contains the names of packages being used in Python. It is important to update this file if other packages or modules are installed during project development by using the following command:
+    - pip freeze --local > requirements.txt
 
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
+2. Create Procfile that contains the name of the application file so that Heroku knows what to run. If the Procfile has a blank line when it is created remove this as this may cause problems.
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+3. Then push these files to GitHub. Once those steps are done, the website can be deployed in Heroku.
 
-### Making a Local Clone
+### Heroku Deployment:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
+    1. Log into Heroku.
+    2. Click the New button.
+    3. Click the option to create a new app.
+    4. Enter the app name in lowercase letters.
+    5. Select the correct geographical region.
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
+### Setting the environment variables:
 
-7. Press Enter. Your local clone will be created.
+Navigate to the settings tab and then click the Reveal Config Vars button and add the following:
 
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
+    1. key: IP, value: 0.0.0.0
+    2. key: PORT, value: 5000
+    3. key: MONGO_DBNAME, value: (the name of the database that is being used for the project)
+    4. key: MONGO_URI, value:
+    
+    - This can be found in MongoDB by navigating to the clusters section of your MongoDB account.
+    - Click the cluster where the database is located.
+    - Click the connect button.
+    - Select the connect you application button.
+    - Copy the link provided to your application and ensure you have substituted the password and dbname with the correct values).
 
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+    5. key: SECRET_KEY, value: (This is a custom secret key set up for configuration to keep client-side sessions secure).
+    
+### Enable automatic deployment:
+
+    1. Click the Deploy tab
+    2. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
+
+### Connect app to Github Repository
+    1. Click the deploy tab and connect to GitHub.
+    2. Type the name of the repository into the search bar presented.
+    3. Click the Code dropdown button next to the green Gitpod button.
+    4. When the correct repository displays click the connect button.
+
+### Making a clone to run locally
+
+It is important to note that this project will not run locally unless an env.py file has been set up by the user which contains the IP, PORT, MONGO_DBNAME, MONGO_URI and SECRET_KEY which have all been kept secret in keeping with best security practices.
+
+    1. Log into GitHub.
+    2. Select the respository.
+    3. Click the Code dropdown button next to the green Gitpod button.
+    4. Download ZIP file and unpackage locally and open with IDE. Alternatively copy the URL in the HTTPS box.
+    5. Open the alternative editor and terminal window.
+    6. Type 'git clone' and paste the copied URL.
+    7. Press Enter. A local clone will be created.
+    
+Once the project been loaded into the IDE it is necessary to install the necessary requirements which can be done by typing the following command.
+
+-pip install -r requirements.txt
+
+### How to Fork the respository.
+    1. Log into GitHub.
+    2. In Github go to (https://github.com/Elippsis007/football_shelf_m3).
+    3. In the top right hand corner click "Fork".
 
 ## Credits
 
