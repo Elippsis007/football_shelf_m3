@@ -16,16 +16,17 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
     -   #### First Time Visitor Goals
 
-        -   As a first-time user I want to know the main purpose of the site immediately upon arriving on the site.
+        -   As a first-time user, I want to know the main purpose of the site immediately upon arriving on the site.
         -   As a first-time user, I want first time impressions to be appealing, the idea being that it won't intimidate the user with an overload of content.
-        -   As a first-time user I want the site UX to be intuitive for ease of use. I want the user to be able to easily navigate throughout the site to find content and services the user is looking for.
+        -   As a first-time user, I want the site UX to be intuitive for ease of use. I want the user to be able to easily navigate throughout the site to find content and services the user is looking for.
+        -   As a first-time user, I want to be able to register with the site and create my own profile which I can log in to at any time.
         
     -   #### Returning Visitor Goals
 
-        -   As a returning user, I want to be able to register with the site and create my own profile which I can log in to at any time.
+        -   As a returning user, I want to be able to log into the site with my own profile at any time.
         -   As a returning user, I want to be able to add football books of my own to the site.
         -   As a returning user, I want to be able to edit/delete any book contributions I have made to the site.
-        -   As a user I want the site to be responsive to all devices.
+        -   As a returning user, I want the site to be responsive to all devices.
         
 -   ### Design
 
