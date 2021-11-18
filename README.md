@@ -56,7 +56,7 @@ This is The Football Shelf a simple project, a website designed to be responsive
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Header.png"></h2>
     
    #### The Home page includes:
--   A search where users can search for keywords that appear in the Football Library.
+-   A Search Bar: where users can search for keywords that appear in the Football Library.
 
     <h2 align="center"><img src="https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Search_Bar.png"></h2>
     
