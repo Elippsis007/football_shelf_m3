@@ -109,15 +109,15 @@ This is The Football Shelf a simple project, a website designed to be responsive
 
 ## Mobile Wireframes
 
--   Register/Login Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/home_page_mobile.png)
+-   Register/Login Page Wireframe - [view]()
 
--   Home Page Collapsible Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/website_images/Home%20Page%20-%20Collapsible.png)
+-   Home Page Collapsible Wireframe - [view]()
 
--   User Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/user_page_mobile.png) 
+-   User Page Wireframe - [view]() 
 
--   Add Book Page Wireframe - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/add_book_page_mobile.png)
+-   Add Book Page Wireframe - [view]()
 
--   Manage Genres - [view](https://github.com/Elippsis007/football_shelf_m3/blob/main/static/images/wireframes/manage_football_genre_mage-mobile.png)
+-   Manage Genres - [view]()
 
 ## Database Scheme
 
