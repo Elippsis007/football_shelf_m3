@@ -276,7 +276,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 
 -   Tutor support at Code Institute for their support.
 
--   I'd like to thank my girlfriend, mates and family for testing the website on their devices and for suggesting changes and bugs.
+-   I'd like to thank my mates and family for testing the website on their devices and for suggesting changes and bugs.
 
 ## References
 
